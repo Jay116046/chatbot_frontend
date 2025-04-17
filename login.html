@@ -27,10 +27,10 @@
         align-items: center;
         justify-content: center;
         min-height: 100vh;
-        /* background-image: url(cb04b03b38b01def99febb2585a48d1a.gif); */
-        background-color: #2d6760;
+        /* background-image: url(cb04b03b38b01def99febb2585a48d1a.gif);
+        /* background-color: #2d6760; 
         background-position: center;
-        background-size: cover;
+        background-size: cover; */
       }
 
       section {
@@ -156,7 +156,7 @@
       }
     </style>
   </head>
-  <body>
+  <body  class="body-box">
     <!-- partial:index.partial.html -->
     <body>
       <section>
@@ -182,6 +182,12 @@
           </div>
         </form>
       </section>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+      <script>
+        VANTA.WAVES('.body-box')
+      </script>
     </body>
     <!-- partial -->
   </body>

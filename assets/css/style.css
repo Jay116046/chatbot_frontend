@@ -13,13 +13,35 @@ body {
   color: #000000;
 }
 
-a {
-  color: #43aea0;
+#a1 {
+  color: black;
+  font-size: larger;
+  color: while;
+  padding: 0.3rem .8rem;
+  transition: color .25s;
 }
 
-a:hover {
+/* a:hover {
   color: #00d3b8;
   text-decoration: none;
+} */
+#a1::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: #04e4e4 ;
+  scale: .8 0;
+  z-index: -1;
+  transition: .45s;
+  border-radius: 10px;
+}
+
+#a1:hover {
+  color: white;
+}
+
+#a1:hover::after {
+  scale: .8 .8;
 }
 
 h1,
